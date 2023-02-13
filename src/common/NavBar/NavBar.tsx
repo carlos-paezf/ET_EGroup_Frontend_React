@@ -45,10 +45,10 @@ const NavBar: FC<{}> = () => {
                     <Container maxWidth="xl" sx={ { display: { xs: 'none', sm: 'none', md: 'block', } } }>
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
                             <Grid item>
-                                <Stack direction="row" spacing={ 2 } alignItems='center'>
+                                <Stack direction="row" spacing={ 1 } alignItems='center'>
                                     <Typography variant='h6'
                                         onClick={ () => navigate( '' ) }
-                                        sx={ { my: 2, cursor: 'pointer', color: `${ ThemePalette.PRIMARY }` } }>
+                                        sx={ { my: 2, mr: 3, cursor: 'pointer', color: `${ ThemePalette.PRIMARY }` } }>
                                         EGroup
                                     </Typography>
                                     <LinksComponent />
