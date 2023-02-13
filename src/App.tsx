@@ -1,11 +1,16 @@
+import { Container } from '@mui/material'
+import { Outlet } from 'react-router-dom'
 import './App.css'
+import NavBar from './common/NavBar/NavBar'
 
-const App = () => {
+
+export const App = () => {
     return (
-        <div className='container mt-3'>
-            <h1>Proyecto</h1>
-        </div>
+        <>
+            <NavBar />
+            <Container maxWidth="xl" sx={ { marginTop: "2rem", width: '100%' } }>
+                <Outlet />
+            </Container>
+        </>
     )
 }
-
-export default App

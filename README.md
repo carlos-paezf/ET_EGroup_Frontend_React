@@ -19,7 +19,7 @@
 3. Instalar paquetes adicionales necesarios:
 
    ```txt
-   $: pnpm i react-router-dom
+   $: pnpm i react-router-dom@6 @emotion/react @emotion/styled @mui/icons-material @mui/material @babel/core@">=7.0.0 <8.0.0"  @emotion/core@0.x.x
    ```
 
 4. Levantar proyecto en modo desarrollo:
