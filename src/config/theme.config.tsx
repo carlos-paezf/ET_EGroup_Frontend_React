@@ -26,7 +26,10 @@ const theme = createTheme( {
                     boxShadow: "none",
                     borderRadius: ".5em",
                     wordSpacing: "5px",
-                    letterSpacing: ".75px"
+                    letterSpacing: ".75px",
+                    fontSize: '1rem',
+                    paddingLeft: '30px',
+                    paddingRight: '30px'
                 }
             }
         },
