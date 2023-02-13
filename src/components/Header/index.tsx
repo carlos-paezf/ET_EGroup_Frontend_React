@@ -12,6 +12,8 @@ type HeaderProps = {
 export const HeaderComponent: FC<HeaderProps> = ( { title, description, element } ) => {
     return (
         <>
+            <Divider />
+
             <Box sx={ { width: "100%", height: "auto", mt: 7, mb: 3 } }>
                 <Grid container direction="row"
                     justifyContent="center" alignItems="center" sx={ { height: "100%", width: "100%" } }>
@@ -33,8 +35,6 @@ export const HeaderComponent: FC<HeaderProps> = ( { title, description, element 
                     </Grid>
                 </Grid>
             </Box>
-
-            <Divider />
         </>
     )
 }
