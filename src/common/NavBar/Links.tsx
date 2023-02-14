@@ -5,16 +5,16 @@ import { FC } from "react"
 export const LinksComponent: FC = () => {
     return (
         <>
-            <a href='/home#home'>
+            <a href='/#home'>
                 <Button variant='text'>Inicio</Button>
             </a>
-            <a href='/home#us'>
+            <a href='/#us'>
                 <Button variant='text'>Nosotros</Button>
             </a>
-            <a href='/home#products'>
+            <a href='/#products'>
                 <Button variant='text'>Productos</Button>
             </a>
-            <a href='/home#contact'>
+            <a href='/#contact'>
                 <Button variant='text'>Contacto</Button>
             </a>
         </>

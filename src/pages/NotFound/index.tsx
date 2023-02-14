@@ -6,7 +6,7 @@ import status404 from './../../assets/status_404.svg'
 
 export const NotFoundPage: FC = () => {
     return (
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" sx={ { my: 12 } }>
             <Grid container direction="row" alignItems="center" justifyContent="center" sx={ {
                 flexDirection: { xs: 'column-reverse', sm: 'column-reverse', md: 'row' },
                 textAlign: 'center'
@@ -26,7 +26,7 @@ export const NotFoundPage: FC = () => {
                             1. El vínculo que conduce a esta página es incorrecto o demasiado antiguo<br />
                             2. Has llegado hasta aquí por medio de un marcador vinculado a una página que ha cambiado de ubicación
                         </Typography>
-                        <Link to="/home">
+                        <Link to="/">
                             <Button variant="contained">Ir al Inicio</Button>
                         </Link>
                     </Stack>

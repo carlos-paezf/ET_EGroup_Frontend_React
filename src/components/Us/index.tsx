@@ -24,7 +24,7 @@ export const UsComponent: FC = () => {
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsa eveniet sint quos ex ab blanditiis? Sunt voluptatibus fuga non nam ad reprehenderit esse quis dolore voluptate, sint, necessitatibus suscipit.
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officia libero ut et quaerat voluptate ea nihil? Sapiente a voluptatibus voluptatum ad suscipit, enim quasi voluptate neque ipsa incidunt ducimus.
                             </Typography>
-                            <Link to="/home">
+                            <Link to="/">
                                 <Button variant="contained">Seguir leyendo</Button>
                             </Link>
                         </Stack>
