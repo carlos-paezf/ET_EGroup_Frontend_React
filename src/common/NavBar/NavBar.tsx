@@ -28,7 +28,7 @@ const NavBar: FC<{}> = () => {
                                 <Typography variant='h6'
                                     onClick={ () => navigate( '' ) }
                                     sx={ { my: 2, cursor: 'pointer', color: `${ ThemePalette.PRIMARY }` } }>
-                                    EGroup
+                                    GitFerrer
                                 </Typography>
                             </Grid>
                             <Grid item>
@@ -49,7 +49,7 @@ const NavBar: FC<{}> = () => {
                                     <Typography variant='h6'
                                         onClick={ () => navigate( '' ) }
                                         sx={ { my: 2, mr: 3, cursor: 'pointer', color: `${ ThemePalette.PRIMARY }` } }>
-                                        EGroup
+                                        GitFerrer
                                     </Typography>
                                     <LinksComponent />
                                 </Stack>

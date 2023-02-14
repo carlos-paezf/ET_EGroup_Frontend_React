@@ -30,7 +30,7 @@ export const DrawerComponent: FC<DrawerProp> = ( { mobileOpen, navigate, handleD
                     <Grid item width="100%">
                         <Typography variant='h6' onClick={ () => navigate( '' ) }
                             sx={ { my: 2, cursor: 'pointer', color: `${ ThemePalette.PRIMARY }` } }>
-                            EGroup
+                            GitFerrer
                         </Typography>
                         <Divider />
                     </Grid>
