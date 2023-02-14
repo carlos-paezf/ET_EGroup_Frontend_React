@@ -16,6 +16,10 @@
     -webkit-text-size-adjust: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     font-weight: 500;
     color: #646cff;
@@ -60,6 +64,24 @@ button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+    cursor: move;
+}
+
+::-webkit-scrollbar-track {
+    background: #918383;
+    cursor: move;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3F0055;
+    cursor: move;
+    border-radius: 5px;
+} */
+
 
 @media (prefers-color-scheme: light) {
     :root {
