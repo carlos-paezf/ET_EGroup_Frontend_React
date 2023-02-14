@@ -1,18 +1,19 @@
 import { OpenInNew as OpenInNewIcon } from '@mui/icons-material'
 import { Button, Container, Grid, Stack, Typography } from '@mui/material'
-import { FC } from "react"
-import hero from '../../assets/hero_world.svg'
+import { FC, memo } from "react"
+import hero1 from '../../assets/hero_world.svg'
+import hero2 from '../../assets/hero-2.svg'
 import { ThemePalette } from "../../helpers/util"
 
-export const HeroComponent: FC = () => {
+const Hero: FC<{ step: number }> = ( { step } ) => {
     return (
-        <section id="home">
+        <section id="home" style={ { paddingTop: '3rem' } }>
             <Container maxWidth="xl">
-                <Grid container direction="row" justifyContent="space-between" alignItems="center">
+                <Grid container direction={ ( step % 2 === 0 ) ? 'row' : 'row-reverse' } justifyContent="space-between" alignItems="center">
                     <Grid item sx={ { width: { sm: '100%', md: "50%" } } }>
-                        <Stack direction="column" spacing={ 2 } alignItems='start' sx={ {
-                            alignItems: { sm: "center", md: "start" },
-                            textAlign: { sm: "center", md: "left" }
+                        <Stack direction="column" spacing={ 2 } sx={ {
+                            alignItems: { sm: "center", md: ( step % 2 === 0 ) ? 'start' : 'end' },
+                            textAlign: { sm: "center", md: ( step % 2 === 0 ) ? 'left' : 'right' }
                         } }>
                             <Typography variant="h2">
                                 Página de ensayo para
@@ -30,10 +31,12 @@ export const HeroComponent: FC = () => {
                     </Grid>
 
                     <Grid item sx={ { width: { sm: '0%', md: "50%" } } }>
-                        <img src={ hero } alt="Hero image" />
+                        <img src={ ( step % 2 === 0 ) ? hero1 : hero2 } alt="Hero image" />
                     </Grid>
                 </Grid>
             </Container>
         </section>
     )
 }
+
+export const HeroComponent = memo( Hero )
