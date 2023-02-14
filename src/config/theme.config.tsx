@@ -26,7 +26,7 @@ const theme = createTheme( {
                     boxShadow: "none",
                     borderRadius: ".5em",
                     wordSpacing: "5px",
-                    letterSpacing: ".75px",
+                    letterSpacing: ".35px",
                     fontSize: '1rem',
                     paddingLeft: '30px',
                     paddingRight: '30px'
@@ -50,8 +50,46 @@ const theme = createTheme( {
                     background: ThemePalette.BG_SUCCESS_MAIN
                 }
             }
+        },
+        MuiCardContent: {
+            styleOverrides: {
+                root: {
+                    margin: 0,
+                    padding: 0
+                }
+            }
+        },
+        MuiCssBaseline: {
+            styleOverrides: {
+                body: {
+                    // scrollbarColor: ThemePalette.PRIMARY,
+                    // msScrollbarTrackColor: ThemePalette.BG_ERROR_MAIN,
+                    scrollbarColor: `#6b6b6b #2b2b2b ${ ThemePalette.BG_ERROR_MAIN } ${ ThemePalette.PRIMARY }`,
+                    "&::-webkit-scrollbar, & *::-webkit-scrollbar": {
+                        borderRadius: 5,
+                        backgroundColor: ThemePalette.SECONDARY,
+                    },
+                    "&::-webkit-scrollbar-thumb, & *::-webkit-scrollbar-thumb": {
+                        borderRadius: 8,
+                        backgroundColor: ThemePalette.PRIMARY,
+                        minHeight: 24,
+                    },
+                    "&::-webkit-scrollbar-thumb:focus, & *::-webkit-scrollbar-thumb:focus": {
+                        backgroundColor: ThemePalette.LIGHT_PRIMARY,
+                    },
+                    "&::-webkit-scrollbar-thumb:active, & *::-webkit-scrollbar-thumb:active": {
+                        backgroundColor: ThemePalette.LIGHT_PRIMARY,
+                    },
+                    "&::-webkit-scrollbar-thumb:hover, & *::-webkit-scrollbar-thumb:hover": {
+                        backgroundColor: ThemePalette.LIGHT_PRIMARY,
+                    },
+                    "&::-webkit-scrollbar-corner, & *::-webkit-scrollbar-corner": {
+                        backgroundColor: "#2b2b2b",
+                    },
+                }
+            },
         }
-    }
+    },
 } )
 
 
