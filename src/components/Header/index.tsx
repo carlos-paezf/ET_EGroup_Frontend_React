@@ -12,9 +12,9 @@ type HeaderProps = {
 export const HeaderComponent: FC<HeaderProps> = ( { title, description, element } ) => {
     return (
         <>
-            <Divider />
+            <Divider sx={ { my: 7 } } />
 
-            <Box sx={ { width: "100%", height: "auto", mt: 7, mb: 3 } }>
+            <Box sx={ { width: "100%", height: "auto", mb: 3 } }>
                 <Grid container direction="row"
                     justifyContent="center" alignItems="center" sx={ { height: "100%", width: "100%" } }>
                     <Grid item xs={ 12 }>
