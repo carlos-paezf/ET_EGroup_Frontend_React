@@ -1,5 +1,6 @@
 import { Button } from "@mui/material"
 import { FC } from "react"
+import { Link } from "react-router-dom"
 
 
 export const LinksComponent: FC = () => {
@@ -8,12 +9,12 @@ export const LinksComponent: FC = () => {
             <a href='/#home'>
                 <Button variant='text'>Inicio</Button>
             </a>
-            <a href='/#us'>
+            <Link to='/company'>
                 <Button variant='text'>Nosotros</Button>
-            </a>
-            <a href='/#products'>
+            </Link>
+            <Link to='/products'>
                 <Button variant='text'>Productos</Button>
-            </a>
+            </Link>
             <a href='/#contact'>
                 <Button variant='text'>Contacto</Button>
             </a>
