@@ -1,17 +1,19 @@
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Divider, Rating, Stack, Typography } from "@mui/material"
+import { Button, Card, CardActions, CardContent, CardMedia, Rating, Stack, Typography } from "@mui/material"
 import { FC } from "react"
-import type { ProductType } from "../../types"
+import { Link } from "react-router-dom"
 import withoutImage from '../../assets/without-image.svg'
+import type { ProductType } from "../../types"
 
 
 export const CardProductComponent: FC<ProductType> = ( { title, description, image, rating, slug } ) => {
     return (
-        <Card variant="outlined" sx={ { width: "500px", maxWidth: "500px", mb: 3 } }>
+        <Card variant="outlined" sx={ { width: "500px", maxWidth: "500px", mb: 3, height: '635px' } }>
             <CardContent>
                 <CardMedia
                     component="img"
                     height="400"
-                    image={ image ?? withoutImage }
+                    src={ image }
+                    image={ ( !image || image?.length < 20 ) ? withoutImage : image }
                     alt={ slug }
                 />
 
@@ -22,14 +24,16 @@ export const CardProductComponent: FC<ProductType> = ( { title, description, ima
                         { title }
                     </Typography>
 
-                    <Typography>
+                    <Typography height="75px" maxHeight="75px" textOverflow="ellipsis" overflow="hidden">
                         { description }
                     </Typography>
                 </Stack>
             </CardContent>
 
             <CardActions>
-                <Button variant="text">Learn More</Button>
+                <Link to={ `/products/${ slug }` }>
+                    <Button variant="text">Learn More</Button>
+                </Link>
             </CardActions>
         </Card >
     )
