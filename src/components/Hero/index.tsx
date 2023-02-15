@@ -17,8 +17,8 @@ const Hero: FC<{ step: number }> = ( { step } ) => {
                         } }>
                             <Typography variant="h2">
                                 Página de ensayo para
-                                <Typography variant="h2" color={ ThemePalette.PRIMARY }>Prueba Técnica</Typography>
                             </Typography>
+                            <Typography variant="h2" color={ ThemePalette.PRIMARY }>Prueba Técnica</Typography>
                             <Typography variant="subtitle1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</Typography>
 
                             <a href="https://github.com/carlos-paezf" target="_blank" rel="noopener noreferrer">
