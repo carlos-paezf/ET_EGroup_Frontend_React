@@ -13,6 +13,9 @@ const theme = createTheme( {
         },
         primary: {
             main: ThemePalette.PRIMARY
+        },
+        secondary: {
+            main: ThemePalette.SECONDARY
         }
     },
     typography: {
