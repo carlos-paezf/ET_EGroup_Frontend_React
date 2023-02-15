@@ -9,7 +9,7 @@ export const ContactComponent: FC = () => {
             <HeaderComponent title="Contacto" description="Escríbenos y déjanos saber que piensas" />
             <Container maxWidth="xl">
                 <Grid container direction='row' justifyContent="space-between" alignItems="center" spacing={ 5 }>
-                    <Grid item sx={ { width: { sm: '100%', md: "50%" } } }>
+                    <Grid item sx={ { width: { xs: '100%', sm: '100%', md: "50%", lg: '50%', xl: '50%' } } }>
                         <Stack direction="column" spacing={ 2 } sx={ {
                             alignItems: { sm: "center", md: 'start' },
                             textAlign: { sm: "center", md: 'left' }
@@ -23,7 +23,7 @@ export const ContactComponent: FC = () => {
                         </Stack>
                     </Grid>
 
-                    <Grid item sx={ { width: { sm: '0%', md: "50%" } } }>
+                    <Grid item sx={ { width: { xs: '100%', sm: '100%', md: "50%", lg: '50%', xl: '50%' } } }>
                         <ContactForm />
                     </Grid>
                 </Grid>
